@@ -40,6 +40,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/fast"
         android:background="@drawable/item_bg"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
     />
 
 </RelativeLayout>
