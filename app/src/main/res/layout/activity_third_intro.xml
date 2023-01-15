@@ -33,7 +33,7 @@
         android:background="@drawable/item_bg"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         />
 
     <TextView
