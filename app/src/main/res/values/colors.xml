@@ -10,4 +10,5 @@
     <color name="primary">#f5f3f3</color>
     <color name="heading_color">#2e2e2e</color>
     <color name="text_color">#515151</color>
+    <color name="cart_num_bg">"#e80013</color>
 </resources>
