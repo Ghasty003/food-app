@@ -26,6 +26,8 @@ public class SecondIntroActivity extends AppCompatActivity {
 
                 if (x1 < x2) {
                     startActivity(new Intent(SecondIntroActivity.this, FirstIntroActivity.class));
+                } else {
+                    startActivity(new Intent(SecondIntroActivity.this, ThirdIntroActivity.class));
                 }
 
                 break;
