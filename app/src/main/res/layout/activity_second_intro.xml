@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondIntroActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Menu"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/header_text_bg"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+    />
+
+    <TextView
+        android:id="@+id/fast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fast food"
+        android:textColor="@color/cart_num_bg"
+        android:textAllCaps="true"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+    />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/burger"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fast"
+        android:background="@drawable/item_bg"
+    />
+
+</RelativeLayout>
