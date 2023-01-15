@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="............."
+                android:text="................"
                 android:textColor="@color/cart_num_bg"
                 android:textSize="18dp"
             />
@@ -168,6 +168,62 @@
             />
         </LinearLayout>
 
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dolor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="make your order"
+        android:textAllCaps="true"
+        android:textColor="@color/cart_num_bg"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_bg"
+            android:layout_marginStart="10dp"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_bg"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#434141"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_bg"
+            android:layout_marginStart="10dp"
+            />
     </LinearLayout>
 
 </RelativeLayout>

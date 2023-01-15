@@ -157,16 +157,15 @@
         android:id="@+id/choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose your restaurant"
-        android:textSize="30sp"
-        android:textColor="@color/cart_num_bg"
-        android:textAllCaps="true"
         android:layout_below="@id/dolor"
+        android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
-    />
+        android:text="Choose your restaurant"
+        android:textAllCaps="true"
+        android:textColor="@color/cart_num_bg"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
