@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     tools:context=".ThirdIntroActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Delivery"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/header_text_bg"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/burger"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:background="@drawable/item_bg"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/dolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_marginHorizontal="30dp"
+        android:layout_above="@id/choose"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="make your order"
+        android:textAllCaps="true"
+        android:textColor="@color/cart_num_bg"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_bg"
+            android:layout_marginStart="10dp"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_bg"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#434141"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_bg"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
