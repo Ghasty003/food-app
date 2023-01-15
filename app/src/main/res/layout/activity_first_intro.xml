@@ -170,26 +170,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/choose"
         android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
         <View
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
             android:background="@drawable/item_bg"
             android:backgroundTint="#434141"
             android:layout_marginStart="10dp"
         />
         <View
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
             android:background="@drawable/item_bg"
             android:layout_marginStart="10dp"
         />
         <View
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
             android:background="@drawable/item_bg"
             android:layout_marginStart="10dp"
         />
