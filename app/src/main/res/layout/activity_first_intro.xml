@@ -13,8 +13,11 @@
         android:layout_centerHorizontal="true"
         android:text="Restaurants"
         android:textSize="30sp"
+        android:textColor="@color/white"
         android:textAllCaps="true"
         android:layout_marginTop="40dp"
+        android:background="@drawable/header_text_bg"
+        android:padding="10dp"
     />
 
 </RelativeLayout>
