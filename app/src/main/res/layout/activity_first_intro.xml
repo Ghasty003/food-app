@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Restaurants"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textColor="@color/white"
         android:textAllCaps="true"
         android:layout_marginTop="40dp"
@@ -81,6 +81,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linear_second"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear_first"
@@ -137,5 +138,18 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/linear_second"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+    />
 
 </RelativeLayout>
