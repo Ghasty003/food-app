@@ -23,12 +23,11 @@
         />
 
 
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:lottie_rawRes="@raw/burger"
+        app:lottie_rawRes="@raw/delivery"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/header"
         android:background="@drawable/item_bg"
