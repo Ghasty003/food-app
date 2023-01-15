@@ -149,7 +149,7 @@
         android:layout_below="@id/linear_second"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
     />
 
 </RelativeLayout>
