@@ -28,6 +28,7 @@ public class FirstIntroActivity extends AppCompatActivity {
 
                 if (x2 < x1) {
                     startActivity(new Intent(FirstIntroActivity.this, SecondIntroActivity.class));
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
 
                 break;
