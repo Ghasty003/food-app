@@ -91,8 +91,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:textColor="@color/text_color"
+            android:text="@string/register"
+            android:textColor="@color/cart_num_bg"
             android:textSize="18sp"
             android:layout_marginStart="5dp"
         />
