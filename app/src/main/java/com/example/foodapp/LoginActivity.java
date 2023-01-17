@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
         TextView register = findViewById(R.id.register);
 
         register.setOnClickListener(view -> {
-            startActivity(new Intent(this, LoginActivity.class));
+            startActivity(new Intent(this, RegisterActivity.class));
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         });
     }
