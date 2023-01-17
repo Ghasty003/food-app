@@ -31,6 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:hint="Email"
+            android:drawableEnd="@drawable/ic_baseline_email_24"
+            android:drawableTint="@color/cart_num_bg"
         />
     </LinearLayout>
 
