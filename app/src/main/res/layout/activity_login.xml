@@ -38,6 +38,7 @@
                 android:hint="Email"
                 android:drawableEnd="@drawable/ic_baseline_email_24"
                 android:drawableTint="@color/cart_num_bg"
+                android:inputType="textEmailAddress"
             />
             <EditText
                 android:id="@+id/password"
@@ -47,6 +48,7 @@
                 android:hint="Password"
                 android:drawableEnd="@drawable/ic_baseline_vpn_key_24"
                 android:drawableTint="@color/cart_num_bg"
+                android:inputType="textPassword"
             />
 
             <TextView
