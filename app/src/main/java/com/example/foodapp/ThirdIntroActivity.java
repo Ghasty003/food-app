@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 
+import com.google.android.material.button.MaterialButton;
+
 public class ThirdIntroActivity extends AppCompatActivity {
     float x1, x2;
 
@@ -14,6 +16,13 @@ public class ThirdIntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_intro);
+
+        MaterialButton materialButton = findViewById(R.id.continueBtn);
+
+        materialButton.setOnClickListener(view -> {
+            startActivity(new Intent(this, SplashScreenActivity.class));
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        });
     }
 
     @Override
