@@ -54,7 +54,7 @@
         android:id="@+id/choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/linear"
+        android:layout_above="@id/continueBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="30dp"
@@ -63,6 +63,19 @@
         android:textAllCaps="true"
         android:textColor="@color/cart_num_bg"
         android:textSize="30sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/linear"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="30dp"
+        android:backgroundTint="@color/cart_num_bg"
+        app:cornerRadius="10dp"
+    />
 
     <LinearLayout
         android:id="@+id/linear"
