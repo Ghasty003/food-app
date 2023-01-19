@@ -21,6 +21,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -45,21 +46,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         register.setOnClickListener(view -> signupUser());
 
-        final String url = "https://foodcity.onrender.com/test";
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d("MY_APP", response);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("MY_APP", error.getLocalizedMessage());
-            }
-        });
-
-        request.add(stringRequest);
-
         login.setOnClickListener(view -> {
             startActivity(new Intent(this, LoginActivity.class));
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
@@ -67,7 +53,6 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void signupUser() {
-        Toast.makeText(this, "Hello world", Toast.LENGTH_SHORT).show();
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
 
@@ -77,8 +62,23 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
 
-        final String url = "https://foodcity.onrender.com/test";
+        final String url = "https://foodcity.onrender.com/api/users/signup";
+        JSONObject user = new JSONObject();
 
+        try {
+            user.put("email", email);
+            user.put("password", password);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, user, response -> {
+            Log.d("MY_APP", response.toString());
+        }, error -> {
+            Log.d("MY_APP", error.getLocalizedMessage());
+        });
+
+        request.add(jsonObjectRequest);
     }
     
     private boolean validateUserDetails(String email, String password) {
