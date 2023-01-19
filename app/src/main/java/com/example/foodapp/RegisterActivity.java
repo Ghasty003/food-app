@@ -24,6 +24,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText emailEditText, passwordEditText;
     private Button register;
     RequestQueue request;
+    private final String FILE_NAME = "user.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,11 +78,32 @@ public class RegisterActivity extends AppCompatActivity {
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, user, response -> {
             Log.d("MY_APP", response.toString());
+            saveUserDataToInternalStorage(response.toString());
         }, error -> {
             Log.d("MY_APP", error.getLocalizedMessage());
         });
 
         request.add(jsonObjectRequest);
+    }
+
+    private void saveUserDataToInternalStorage(String data) {
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = openFileOutput(FILE_NAME, MODE_PRIVATE);
+            fileOutputStream.write(data.getBytes());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
     
     private boolean validateUserDetails(String email, String password) {
