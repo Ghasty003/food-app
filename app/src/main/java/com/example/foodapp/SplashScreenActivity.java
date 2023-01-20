@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.JsonReader;
 import android.util.Log;
 
 import com.google.android.material.button.MaterialButton;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONStringer;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -16,12 +21,13 @@ import java.io.InputStreamReader;
 import java.util.Objects;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    private final String FILE_NAME = "user.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        Utility utility = new Utility();
 
         MaterialButton Login = findViewById(R.id.login);
         MaterialButton Register = findViewById(R.id.register);
@@ -36,43 +42,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         });
 
-        if (!Objects.equals(loadUserData(), "")) {
-            Log.d("MY_APP", loadUserData());
-        } else {
-            Log.d("MY_APP", "no data");
-        }
-    }
-
-    private String loadUserData() {
-        FileInputStream fileInputStream = null;
-        String data = "";
-
-        try {
-            fileInputStream = openFileInput(FILE_NAME);
-            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-            StringBuilder stringBuilder = new StringBuilder();
-
-            String text;
-            while ((text = bufferedReader.readLine()) != null) {
-                stringBuilder.append(text);
-            }
-
-            data = stringBuilder.toString();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (fileInputStream != null) {
-                try {
-                    fileInputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        return data;
+        Log.d("MY_APP", utility.loadUserData());
     }
 }
