@@ -7,6 +7,7 @@
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/item_bg.xml" value="0.1" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/linear_bg.xml" value="0.1" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/menu_item_color.xml" value="0.1" />
+        <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/search_bg.xml" value="0.1" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/slide_in_left.xml" value="0.1" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/slide_in_right.xml" value="0.1" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/slide_out_left.xml" value="0.1" />
@@ -19,6 +20,7 @@
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/layout/activity_second_intro.xml" value="0.203125" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/layout/activity_third_intro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER PC/AndroidStudioProjects/Foodapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.203125" />
       </map>
     </option>
