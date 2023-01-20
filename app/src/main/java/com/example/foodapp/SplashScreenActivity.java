@@ -42,15 +42,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         });
 
         if (!Objects.equals(loadUserData(), "")) {
-            try {
-                JSONObject jsonObject = new JSONObject(loadUserData());
-                String token = jsonObject.getString("token");
-                Log.d("MY_APP", token);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            Log.d("MY_APP", loadUserData());
-
+           startActivity(new Intent(this, MainActivity.class));
+           finish();
         } else {
             Log.d("MY_APP", "no data");
         }
