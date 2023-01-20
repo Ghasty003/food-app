@@ -21,7 +21,6 @@ import java.io.InputStreamReader;
 import java.util.Objects;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    private final String FILE_NAME = "user.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,45 +39,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             startActivity(new Intent(this, RegisterActivity.class));
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         });
-
-        if (!Objects.equals(loadUserData(), "")) {
-           startActivity(new Intent(this, MainActivity.class));
-           finish();
-        } else {
-            Log.d("MY_APP", "no data");
-        }
-    }
-
-    private String loadUserData() {
-        FileInputStream fileInputStream = null;
-        String data = "";
-
-        try {
-            fileInputStream = openFileInput(FILE_NAME);
-            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-            StringBuilder stringBuilder = new StringBuilder();
-
-            String text;
-            while ((text = bufferedReader.readLine()) != null) {
-                stringBuilder.append(text);
-            }
-
-            data = stringBuilder.toString();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (fileInputStream != null) {
-                try {
-                    fileInputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        return data;
     }
 }
