@@ -7,6 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.foodapp.fragments.DrinkFragment;
 import com.example.foodapp.fragments.FoodFragment;
+import com.example.foodapp.fragments.FruitFragment;
 
 public class ViewPager2Adapter extends FragmentStateAdapter {
 
@@ -20,6 +21,9 @@ public class ViewPager2Adapter extends FragmentStateAdapter {
         switch (position) {
             case 1:
                 return new DrinkFragment();
+
+            case 2:
+                return new FruitFragment();
 
             default:
                 return new FoodFragment();
