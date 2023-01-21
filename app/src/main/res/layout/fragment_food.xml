@@ -90,11 +90,11 @@
         android:textColor="@color/cart_num_bg"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
         android:drawableTint="@color/cart_num_bg"
-        android:drawablePadding="10dp"
+        android:drawablePadding="4dp"
     />
 
 </RelativeLayout>
