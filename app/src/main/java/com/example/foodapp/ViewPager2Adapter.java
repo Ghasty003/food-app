@@ -9,6 +9,7 @@ import com.example.foodapp.fragments.DrinkFragment;
 import com.example.foodapp.fragments.FishFragment;
 import com.example.foodapp.fragments.FoodFragment;
 import com.example.foodapp.fragments.FruitFragment;
+import com.example.foodapp.fragments.IceCreamFragment;
 import com.example.foodapp.fragments.SnackFragment;
 
 public class ViewPager2Adapter extends FragmentStateAdapter {
@@ -29,6 +30,9 @@ public class ViewPager2Adapter extends FragmentStateAdapter {
 
             case 3:
                 return new SnackFragment();
+
+            case 4:
+                return new IceCreamFragment();
 
             case 5:
                 return new FishFragment();
