@@ -18,7 +18,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:elevation="10dp"
-            android:src="@drawable/food12" />
+            android:src="@drawable/fish" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="190dp"
