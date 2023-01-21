@@ -32,10 +32,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/food_for_you"
-        android:background="@drawable/search_bg"
-        android:paddingHorizontal="10dp"
         android:layout_marginTop="30dp"
-    />
+        android:background="@drawable/search_bg"
+        android:queryHint="Search for foods"
+        android:paddingHorizontal="10dp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
