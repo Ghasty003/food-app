@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.foodapp.R;
 
-class FishFragment extends Fragment {
+public class FishFragment extends Fragment {
 
 
     public FishFragment() {
