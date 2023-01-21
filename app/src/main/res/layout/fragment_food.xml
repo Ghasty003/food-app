@@ -92,6 +92,9 @@
         android:layout_alignParentRight="true"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
+        android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+        android:drawableTint="@color/cart_num_bg"
+        android:drawablePadding="10dp"
     />
 
 </RelativeLayout>
