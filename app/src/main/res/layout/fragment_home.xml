@@ -41,9 +41,10 @@
 
         <LinearLayout
             android:id="@+id/food_for_you"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/linear"
+            android:background="@drawable/delivery_bg"
             android:orientation="horizontal">
 
             <TextView
