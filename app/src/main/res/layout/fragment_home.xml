@@ -45,6 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/linear"
             android:background="@drawable/delivery_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
             android:orientation="horizontal">
 
             <TextView
