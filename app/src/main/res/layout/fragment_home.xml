@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/primary"
-    android:padding="40dp"
+    android:padding="30dp"
     tools:context=".fragments.HomeFragment">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/food_logo"
     />
 
