@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="Bike Delivery"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 />
 
             <ImageView
